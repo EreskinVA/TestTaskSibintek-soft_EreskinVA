@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		2B85C5A5222FB25E008471AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B85C5A4222FB25E008471AD /* AppDelegate.swift */; };
-		2B85C5A7222FB25E008471AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B85C5A6222FB25E008471AD /* ViewController.swift */; };
 		2B85C5AA222FB25E008471AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B85C5A8222FB25E008471AD /* Main.storyboard */; };
 		2B85C5AC222FB260008471AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B85C5AB222FB260008471AD /* Assets.xcassets */; };
 		2B85C5AF222FB260008471AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B85C5AD222FB260008471AD /* LaunchScreen.storyboard */; };
+		2B85C5B9222FB389008471AD /* ScheduleOfEventsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B85C5B8222FB389008471AD /* ScheduleOfEventsTVC.swift */; };
+		2B85C5BD222FCDF6008471AD /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B85C5BC222FCDF6008471AD /* items.json */; };
+		2B85C5BF222FD8F1008471AD /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B85C5BE222FD8F1008471AD /* Events.swift */; };
+		2B85C5C1222FE1C4008471AD /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B85C5C0222FE1C4008471AD /* EventsTableViewCell.swift */; };
+		2B85C5C322311E54008471AD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B85C5C222311E53008471AD /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B85C5A1222FB25E008471AD /* TestTaskSibintek-soft_EreskinVA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestTaskSibintek-soft_EreskinVA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B85C5A4222FB25E008471AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B85C5A6222FB25E008471AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2B85C5A9222FB25E008471AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B85C5AB222FB260008471AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B85C5AE222FB260008471AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B85C5B0222FB260008471AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B85C5B8222FB389008471AD /* ScheduleOfEventsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleOfEventsTVC.swift; sourceTree = "<group>"; };
+		2B85C5BC222FCDF6008471AD /* items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = items.json; sourceTree = "<group>"; };
+		2B85C5BE222FD8F1008471AD /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		2B85C5C0222FE1C4008471AD /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		2B85C5C222311E53008471AD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		2B85C5A3222FB25E008471AD /* TestTaskSibintek-soft_EreskinVA */ = {
 			isa = PBXGroup;
 			children = (
-				2B85C5A4222FB25E008471AD /* AppDelegate.swift */,
-				2B85C5A6222FB25E008471AD /* ViewController.swift */,
-				2B85C5A8222FB25E008471AD /* Main.storyboard */,
-				2B85C5AB222FB260008471AD /* Assets.xcassets */,
-				2B85C5AD222FB260008471AD /* LaunchScreen.storyboard */,
+				2B85C5C522312AAD008471AD /* Supporting Files */,
+				2B85C5C622312ABA008471AD /* Model */,
+				2B85C5C422312A89008471AD /* View */,
+				2B85C5C722312AC7008471AD /* Controller */,
 				2B85C5B0222FB260008471AD /* Info.plist */,
+				2B85C5BC222FCDF6008471AD /* items.json */,
 			);
 			path = "TestTaskSibintek-soft_EreskinVA";
+			sourceTree = "<group>";
+		};
+		2B85C5C422312A89008471AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B85C5C0222FE1C4008471AD /* EventsTableViewCell.swift */,
+				2B85C5A8222FB25E008471AD /* Main.storyboard */,
+				2B85C5AD222FB260008471AD /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B85C5C522312AAD008471AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B85C5A4222FB25E008471AD /* AppDelegate.swift */,
+				2B85C5C222311E53008471AD /* Extensions.swift */,
+				2B85C5AB222FB260008471AD /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B85C5C622312ABA008471AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B85C5BE222FD8F1008471AD /* Events.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B85C5C722312AC7008471AD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2B85C5B8222FB389008471AD /* ScheduleOfEventsTVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B85C5BD222FCDF6008471AD /* items.json in Resources */,
 				2B85C5AF222FB260008471AD /* LaunchScreen.storyboard in Resources */,
 				2B85C5AC222FB260008471AD /* Assets.xcassets in Resources */,
 				2B85C5AA222FB25E008471AD /* Main.storyboard in Resources */,
@@ -135,7 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B85C5A7222FB25E008471AD /* ViewController.swift in Sources */,
+				2B85C5C322311E54008471AD /* Extensions.swift in Sources */,
+				2B85C5C1222FE1C4008471AD /* EventsTableViewCell.swift in Sources */,
+				2B85C5BF222FD8F1008471AD /* Events.swift in Sources */,
+				2B85C5B9222FB389008471AD /* ScheduleOfEventsTVC.swift in Sources */,
 				2B85C5A5222FB25E008471AD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

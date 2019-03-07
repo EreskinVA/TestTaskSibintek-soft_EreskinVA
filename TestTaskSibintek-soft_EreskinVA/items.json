@@ -1,0 +1,149 @@
+﻿[
+  {
+    "id": 0,
+    "guid": "a-00",
+    "name": "Встреча программистов",
+    "beginDate": "2019-02-25 08:00:00",
+    "endDate": "2019-02-25 10:00:00",
+    "kind": 1,
+    "description": "Доклад",
+    "imageId": null,
+    "venue": "Конференц-зал №2",
+    "participant": [
+      {
+        "surname": "Леонидов",
+        "name": "Максим",
+        "patronyc": "Юрьевич",
+        "position": "Руководитель IT департамента",
+        "company": "ООО ИК СИБИНТЕК",
+        "imageId": 1
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "guid": "a-01",
+    "name": "Проблемы нефтедобычи",
+    "beginDate": "2019-02-25 10:15:00",
+    "endDate": "2019-02-25 12:20:00",
+    "kind": 1,
+    "description": "Доклад",
+    "imageId": null,
+    "venue": "Конференц-зал №2",
+    "participant": [
+      {
+        "surname": "Макаров",
+        "name": "Василий",
+        "patronyc": "Андреевич",
+        "position": "Директор по нефтедобыче",
+        "company": "ПАО НК Роснефть",
+        "imageId": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "guid": "a-02",
+    "name": "Обед",
+    "beginDate": "2019-02-25 13:00:00",
+    "endDate": "2019-02-25 14:00:00",
+    "kind": 2,
+    "description": null,
+    "imageId": 3,
+    "venue": "Ресторан",
+    "participant": [
+      {
+        "surname": null,
+        "name": null,
+        "patronyc": null,
+        "position": null,
+        "company": null,
+        "imageId": null
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "guid": "a-03",
+    "name": "Экономика отрасли",
+    "beginDate": "2019-02-25 15:10:00",
+    "endDate": "2019-02-25 16:40:00",
+    "kind": 1,
+    "description": "Доклад",
+    "imageId": null,
+    "venue": "Конференц-зал №1",
+    "participant": [
+      {
+        "surname": "Васильев",
+        "name": "Иван",
+        "patronyc": "Карлович",
+        "position": "Директор по экономике",
+        "company": "ПАО Газпром",
+        "imageId": 4
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "guid": "a-04",
+    "name": "Экологическая безопасность нефтедобычи",
+    "beginDate": "2019-02-26 09:00:00",
+    "endDate": "2019-02-26 10:30:00",
+    "kind": 1,
+    "description": "Доклад",
+    "imageId": null,
+    "venue": "Конференц-зал №1",
+    "participant": [
+      {
+        "surname": "Романов",
+        "name": "Глеб",
+        "patronyc": "Георгивевич",
+        "position": "Главный инженер по экологической безопасности",
+        "company": "ПАО Газпром",
+        "imageId": 5
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "guid": "a-05",
+    "name": "Церемония награждения",
+    "beginDate": "2019-02-26 10:40:00",
+    "endDate": "2019-02-26 12:30:00",
+    "kind": 1,
+    "description": "Торжественная часть",
+    "imageId": null,
+    "venue": "Конференц-зал №1",
+    "participant": [
+      {
+        "surname": null,
+        "name": null,
+        "patronyc": null,
+        "position": null,
+        "company": null,
+        "imageId": null
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "guid": "a-06",
+    "name": "Кофе-брейк",
+    "beginDate": "2019-02-26 13:00:00",
+    "endDate": "2019-02-26 14:00:00",
+    "kind": 2,
+    "description": null,
+    "imageId": 6,
+    "venue": "Ресторан",
+    "participant": [
+      {
+        "surname": null,
+        "name": null,
+        "patronyc": null,
+        "position": null,
+        "company": null,
+        "imageId": null
+      }
+    ]
+  }
+]
