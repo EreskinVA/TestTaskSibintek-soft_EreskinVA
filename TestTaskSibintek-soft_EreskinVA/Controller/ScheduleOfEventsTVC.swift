@@ -73,6 +73,8 @@ class ScheduleOfEventsTVC: UITableViewController {
         
         navigationItem.searchController = searchController
         definesPresentationContext = true
+        
+        title = objectArray[0].sectionObjects[0].dateStart
     }
     
     func setupArrays() {
@@ -98,10 +100,9 @@ class ScheduleOfEventsTVC: UITableViewController {
         
         getJSON()
         
-        setupInterface()
-
         setupArrays()
-
+        
+        setupInterface()
     }
 
     // MARK: - Table view data source
@@ -115,7 +116,11 @@ class ScheduleOfEventsTVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         guard let indexPathFirstCell = tableView.indexPathsForVisibleRows?.first else { return }
-        title = events[indexPathFirstCell.row].beginDate
+        if isFiltering {
+            title = filteredObjectArray[indexPathFirstCell.section].sectionObjects[indexPathFirstCell.row].dateStart
+        } else {
+            title = objectArray[indexPathFirstCell.section].sectionObjects[indexPathFirstCell.row].dateStart
+        }
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -177,7 +182,7 @@ class ScheduleOfEventsTVC: UITableViewController {
             cell.imageName.isHidden = true
         }
 
-        cell.date.text = "\(event.beginDate) - \(event.endDate)"
+        cell.date.text = "\(event.timeStart!) - \(event.timeEnd!)"
         cell.venue.text = "\(event.venue)"
         cell.name.text = "\(event.name)"
 
